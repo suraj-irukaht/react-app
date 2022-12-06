@@ -1,0 +1,108 @@
+@function toRem($value) {
+   $remValue: ($value / 16) + rem;
+   @return $remValue;
+}
+
+.footer {
+   background: linear-gradient(0deg, #1e1e1e, #1e1e1e);
+   padding-top: 3rem;
+   padding-bottom: 2.5rem;
+   color: #fff;
+
+   @media (min-width: 768px) {
+      padding-top: 5rem;
+      padding-bottom: 4rem;
+   }
+
+   @media (min-width: 1024px) {
+      padding-top: 7.5rem;
+      font-size: 1.125rem;
+   }
+
+   @media (min-width: 1200px) {
+      padding-bottom: 6rem;
+   }
+
+   &-brand {
+      margin-bottom: 1.15rem;
+   }
+
+   a {
+      color: inherit;
+
+      &:hover {
+         color: #5458f7;
+      }
+   }
+
+   .copy-right {
+      font-size: 0.875rem;
+
+      @media (min-width: 1024px) {
+         font-size: 1rem;
+      }
+   }
+
+   &-title {
+      margin-bottom: 0.8rem;
+      font-size: 1.3125rem;
+
+      @media (min-width: 1024px) {
+         margin-bottom: toRem(22);
+      }
+   }
+
+   &-link {
+      margin-bottom: 2rem;
+      padding-inline: 1rem;
+      width: 100%;
+      @media (min-width: 520px) {
+         width: 50%;
+      }
+      @media (min-width: 768px) {
+         width: 33.33%;
+      }
+   }
+
+   &-desc {
+      margin-bottom: 2rem;
+      @media (min-width: 520px) {
+         max-width: 400px;
+      }
+      @media (min-width: 768px) {
+         // padding-top: 10px;
+      }
+
+      @media (min-width: 1024px) {
+         width: 30%;
+         max-width: none;
+      }
+   }
+
+   li {
+      margin-block: 8px;
+   }
+
+   &-links {
+      display: flex;
+      flex-wrap: wrap;
+      // width: calc(100% + 2rem);
+      margin-inline: -1rem;
+      @media (min-width: 768px) {
+      }
+      @media (min-width: 1024px) {
+         width: calc(56% + 2rem);
+         display: flex;
+         align-items: flex-start;
+         flex-wrap: wrap;
+      }
+   }
+
+   &-content {
+      @media (min-width: 1024px) {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+      }
+   }
+}

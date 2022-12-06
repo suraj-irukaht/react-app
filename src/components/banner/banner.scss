@@ -1,0 +1,13 @@
+.banner {
+   position: relative;
+   height: 60vw;
+   max-height: 300px;
+
+   @media (min-width: 768px) {
+      max-height: 400px;
+   }
+
+   @media (min-width: 1024px) {
+      max-height: 513px;
+   }
+}

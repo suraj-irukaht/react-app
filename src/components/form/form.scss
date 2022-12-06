@@ -1,0 +1,110 @@
+.filter {
+   padding-block: 2rem;
+
+   @media (min-width: 768px) {
+      padding-bottom: 1rem;
+   }
+
+   @media (min-width: 1024px) {
+      padding-top: 2.6rem;
+      padding-bottom: 1rem;
+   }
+
+   form {
+      @media (min-width: 768px) {
+         margin: 0 -0.7rem;
+         display: flex;
+         align-items: flex-start;
+         flex-wrap: wrap;
+      }
+
+      @media (min-width: 1024px) {
+         display: flex;
+         align-items: flex-start;
+         justify-content: space-between;
+      }
+
+      .select-box {
+         @media (min-width: 768px) {
+            width: 50%;
+            padding-inline: 0.7rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+         }
+
+         @media (min-width: 1024px) {
+            width: 40%;
+         }
+
+         @media (min-width: 1200px) {
+            width: 35%;
+         }
+      }
+
+      .form-group {
+         margin-bottom: 1rem;
+         @media (min-width: 768px) {
+            width: 47%;
+         }
+
+         @media (min-width: 1024px) {
+            width: 45%;
+         }
+      }
+
+      .form-input {
+         position: relative;
+
+         .icon {
+            position: absolute;
+            left: 18px;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none;
+         }
+      }
+
+      .form-input-wrap {
+         @media (min-width: 768px) {
+            width: 50%;
+            padding-inline: 0.7rem;
+         }
+         @media (min-width: 1024px) {
+            width: 47%;
+         }
+      }
+   }
+}
+.search-field {
+   padding-left: 47px;
+   min-height: 56px;
+   color: rgba(242, 242, 242, 0.6);
+}
+
+.react-select__value-container {
+   padding: 3px 12px !important;
+}
+
+span.react-select__indicator-separator {
+   display: none;
+}
+
+.react-select__control--is-focused.react-select__control {
+   border: 0;
+   box-shadow: none;
+}
+
+.react-select__single-value.css-1dimb5e-singleValue {
+   color: currentColor;
+}
+
+.react-select__menu.css-1nmdiq5-menu {
+   background-color: #303033;
+   border-radius: 10px;
+   margin-top: 10px;
+}
+
+.react-select__option:hover {
+   color: #5458f7 !important;
+}

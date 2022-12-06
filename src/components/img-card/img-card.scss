@@ -1,0 +1,28 @@
+.img-card {
+   padding-top: 2rem;
+   padding-bottom: 2.5rem;
+   @media (min-width: 768px) {
+      padding-top: 1rem;
+   }
+   &--wrap {
+      border-radius: 20px;
+      overflow: hidden;
+      background-color: #191a1d;
+
+      @media (min-width: 768px) {
+         display: flex;
+         flex-wrap: wrap;
+         > div {
+            width: 50%;
+         }
+
+         .card-text {
+            width: 52%;
+         }
+
+         .card-img {
+            width: 48%;
+         }
+      }
+   }
+}
