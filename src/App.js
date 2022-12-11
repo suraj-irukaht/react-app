@@ -1,14 +1,22 @@
 import React from 'react';
-import { Cards, Navbar, Banner, Form, ImgCard, Footer } from './components';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { SharedLayout } from './layouts';
+import { Homepage, Errorpage, About, Contact, SinglePost } from './pages';
+
 const App = () => {
    return (
       <>
-         <Navbar />
-         <Banner />
-         <Form />
-         <ImgCard />
-         <Cards />
-         <Footer />
+         <BrowserRouter>
+            <Routes>
+               <Route path="/" element={<SharedLayout />}>
+                  <Route index element={<Homepage />} />
+                  <Route path="about" element={<About />} />
+                  <Route path="contact" element={<Contact />} />
+                  <Route path="singlepost/:postId" element={<SinglePost />} />
+                  <Route path="*" element={<Errorpage />} />
+               </Route>
+            </Routes>
+         </BrowserRouter>
       </>
    );
 };

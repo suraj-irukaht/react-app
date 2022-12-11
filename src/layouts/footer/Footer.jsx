@@ -1,7 +1,7 @@
 import React from 'react';
 import './footer.scss';
 import { logo } from '../../assets';
-import { footerLinks } from '../../constants';
+import { footerLinks } from '../../data';
 
 const Footer = () => {
    return (

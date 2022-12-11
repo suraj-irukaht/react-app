@@ -96,3 +96,13 @@
       padding-bottom: toRem(208);
    }
 }
+
+.card-search {
+   margin-bottom: 2rem;
+   @media (min-width: 520px) {
+      width: 70%;
+   }
+   @media (min-width: 768px) {
+      width: 50%;
+   }
+}

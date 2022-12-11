@@ -1,10 +1,10 @@
-.img-card {
+.post {
    padding-top: 2rem;
    padding-bottom: 2.5rem;
    @media (min-width: 768px) {
       padding-top: 1rem;
    }
-   &--wrap {
+   &-wrap {
       border-radius: 20px;
       overflow: hidden;
       background-color: #191a1d;

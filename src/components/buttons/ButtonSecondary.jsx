@@ -1,11 +1,11 @@
 import React from 'react';
 
-const ButtonSecondary = () => {
+const ButtonSecondary = ({ clickEvent }) => {
    return (
       <>
-         <a href="#" className="btn-secondary">
+         <button className="btn-secondary" onClick={clickEvent}>
             Load More
-         </a>
+         </button>
       </>
    );
 };

@@ -1,6 +1,5 @@
-import React from 'react';
 import './form.scss';
-import { searchIcon } from '../../assets';
+import Search from './Search';
 import Select from 'react-select';
 const options = [
    { value: 'value-1', label: 'Value 1' },
@@ -28,12 +27,11 @@ const Form = () => {
          ...base,
          color: '#fff',
       }),
-      option: (base, state) => ({
+      option: (base) => ({
          ...base,
          backgroundColor: '#303033',
          color: '#fff',
          cursor: 'pointer',
-         // color: state.isFocused ? '#5458f7' : '#fff',
       }),
    };
    return (
@@ -62,16 +60,7 @@ const Form = () => {
                      </div>
                   </div>
                   <div className="form-input-wrap">
-                     <div className="form-input">
-                        <input
-                           type="text"
-                           placeholder="Search Article"
-                           className="search-field"
-                        />
-                        <div className="icon">
-                           <img src={searchIcon} alt="search icon" />
-                        </div>
-                     </div>
+                     <Search placeHolder={'Search Articles'} />
                   </div>
                </form>
             </div>

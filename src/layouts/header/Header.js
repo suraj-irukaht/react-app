@@ -1,20 +1,19 @@
-import React, { useState } from 'react';
-import './navbar.scss';
+import { useState } from 'react';
+import './header.scss';
 import { logo } from '../../assets';
-import { navLinks } from '../../constants';
 import { RiMenuLine } from 'react-icons/ri';
 import { RiCloseLine } from 'react-icons/ri';
+import Logo from './Logo';
+import Navlist from './Navlist';
 
-const Navbar = () => {
+const Header = () => {
    const [navState, setNavState] = useState('menu-hidden');
    return (
       <>
          <header className="header">
             <div className="container">
                <nav className="navbar">
-                  <a href="#" className="logo">
-                     <img src={logo} alt="My App" />
-                  </a>
+                  <Logo imgSrc={logo} styleClass={'header-brand'} />
                   <button
                      className="menu-opener"
                      onClick={() => setNavState('menu-expand')}
@@ -32,13 +31,7 @@ const Navbar = () => {
                      >
                         <RiCloseLine />
                      </button>
-                     <ul className="unstyled">
-                        {navLinks.map((navLink) => (
-                           <li>
-                              <a href="#">{navLink.title}</a>
-                           </li>
-                        ))}
-                     </ul>
+                     <Navlist />
                   </div>
                </nav>
             </div>
@@ -47,4 +40,4 @@ const Navbar = () => {
    );
 };
 
-export default Navbar;
+export default Header;

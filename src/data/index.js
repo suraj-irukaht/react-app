@@ -1,9 +1,4 @@
 import {
-   arrowDown,
-   arrowLeft,
-   eyeIcon,
-   msgIcon,
-   searchIcon,
    img01,
    img02,
    img03,

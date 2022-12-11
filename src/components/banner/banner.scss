@@ -1,4 +1,5 @@
-.banner {
+.banner,
+.error-block {
    position: relative;
    height: 60vw;
    max-height: 300px;
@@ -9,5 +10,22 @@
 
    @media (min-width: 1024px) {
       max-height: 513px;
+   }
+}
+
+.error-content {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   padding-top: 3rem;
+   @media (min-width: 768px) {
+      padding-top: 6rem;
+   }
+   h2 {
+      font-size: 3rem;
+      @media (min-width: 768px) {
+         font-size: 4rem;
+      }
    }
 }
